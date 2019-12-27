@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec \"ts-node\" src/index.ts",
         "debug": "nodemon",
         "inspect": "node --inspect=5858 -r ts-node/register ./src/index.ts",
         "build": "rm -rf dist && tsc",
@@ -43,6 +44,7 @@
         "@types/cors": "^2.8.6",
         "@types/express": "^4.17.2",
         "@types/node": "^13.1.1",
+        "nodemon": "^2.0.2",
         "ts-node": "^8.5.4",
         "typescript": "^3.7.4"
     }
